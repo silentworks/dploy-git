@@ -1,0 +1,16 @@
+Add a new user for 'git push':
+==============================
+From your machine:
+    cat <user>.pub | ssh root@<host> "gitreceive upload-key <user>"
+On this server:
+    cat <user>.pub | gitreceive upload-key <user>
+
+Add a new remote to your local machine:
+=======================================
+From your machine:
+    git remote add <remote> git@<host>:<repository>.git
+
+Deploy a local branch to this machine:
+======================================
+From your machine:
+    git push <remote> <local branch>:master

@@ -1,0 +1,4 @@
+INSTALL.txt
+===========
+
+To install, run `make` from the working directory.
