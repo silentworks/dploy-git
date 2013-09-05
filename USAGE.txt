@@ -14,3 +14,9 @@ Deploy a local branch to this machine:
 ======================================
 From your machine:
     git push <remote> <local branch>:master
+    
+Force a redeploy of code when there has been no change:
+=======================================================
+From your machine:
+    git push <remote> :master
+    git push <remote> <local branch>:master
